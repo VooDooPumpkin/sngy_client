@@ -27,7 +27,7 @@ export default {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        query: "{getOccupations{ name, companyName, hireDate, fireDate, salary, fraction, base, advance, byHours }}"
+        query: "{getOccupations{ name, companyName, positionName, hireDate, fireDate, salary, fraction, base, advance, byHours }}"
       })
     }).then(res => {
       if(res.ok){
